@@ -28,9 +28,7 @@ button {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    height: 56px;
     display: block;
-    min-width: 169px;
     border: none;
     border-radius: 4px;
     margin-left: auto;
@@ -55,6 +53,11 @@ address {
 .button:hover,
 .button:focus {
     background: #404BBF;
+}
+
+.button {
+    height: 56px;
+    min-width: 169px;
 }
 
 body {
@@ -584,3 +587,222 @@ svg {
 }
 
 /* ============== FOOTER STYLES ============== */
+
+/* ============== BACKDROP STYLES ============== */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999999999;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(46, 47, 66, 0.40);
+    
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* ============== BACKDROP STYLES ============== */
+
+/* ============== MODAL STYLES ============== */
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 408px;
+    min-height: 584px;
+    border-radius: 4px;
+    background-color: #FCFCFC;
+    padding-top: 72px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px;
+}
+
+.modal-close-button {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 24px;
+    top: 24px;
+    border: rgba(0, 0, 0, 0.10);
+    border-radius: 100px;
+    background-color: #E7E9FC;
+    padding: 0px;
+    line-height: 0;
+    fill: #2E2F42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-button:hover,
+.modal-close-button:focus {
+fill: #FFF;
+background-color: #404BBF;
+}
+
+
+.modal-close-button-icon {
+    height: 8px;
+    width: 8px;
+}
+
+.review-form-description {
+    width: 360px;
+    height: 24px;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+    color: #2E2F42;  
+}
+
+/* ============== MODAL STYLES ============== */
+
+/* ============== REVIEW FORM STYLES ============== */
+
+.review-form-field-wrapper {
+    margin-bottom: 8px;
+}
+
+.review-form-field-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    margin-bottom: 4px;
+    color: #8E8F99;
+}
+
+.review-form-input-wrapper {
+    position: relative;
+}
+
+.review-form-field {
+    width: 100%;
+    height: 40px;
+    padding-left: 38px;
+    border-radius: 4px;
+    transition: border-color cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(46, 47, 66, 0.40);
+}
+.review-form-field:focus {
+    border-color: #4D5AE5;
+    outline-offset: 1px;
+    outline-color: transparent;
+}
+
+
+.review-form-field-icon {
+    position: absolute;    працює якщо забрати
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    stroke: #2e2f42;
+}
+
+.review-form-field:focus + .review-form-field-icon {
+    stroke: #4D5AE5;
+}
+
+.review-form-message {
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    resize: none;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.16; 
+    letter-spacing: 0.04em;
+    padding-top: 8px;
+    padding-left: 16px;
+    color: rgba(46, 47, 66, 0.40);
+}
+
+.review-form-message::placeholder {
+    color: rgba(46, 47, 66, 0.40);
+}
+
+.review-form-message:focus {
+    border-color: #4D5AE5;
+    outline-offset: 1px;
+    outline-color: transparent;
+    transition: border-color cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.review-form-checkbox-wrapper {
+    margin-bottom: 24px;
+}
+
+.review-form-own-checkbox {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba(46, 47, 66, 0.40);
+    border-radius: 2px;
+    fill: transparent;
+    margin-right: 8px;
+}
+
+.review-form-own-checkbox-icon {
+    width: 16px;
+    height: 16px;
+    
+}
+
+.review-form-checkbox-label {
+    font-size: 12px;
+    font-weight: 400;
+    color: #8E8F99;
+    letter-spacing: 0.04em;
+}
+
+.privacy-policy-link {
+color: #4D5AE5;
+
+}
+
+.review-form-checkbox:checked 
++ .review-form-checkbox-label
+.review-form-own-checkbox {
+    background-color: #404BBF;
+    fill: ;
+}
+
+.review-form-checkbox:focus 
++ .review-form-checkbox-label
+.review-form-own-checkbox {
+    outline: 2px solid #404BBF;
+}
+
+.review-form-button {
+    min-width: 169px;
+    height: 56px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 4px;
+    color: #ffffff;
+    background-color: #4D5AE5; 
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ============== REVIEW FORM STYLES ============== */
