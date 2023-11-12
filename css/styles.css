@@ -586,6 +586,19 @@ svg {
     fill: #f4f4fd;
 }
 
+.footer-subscribe-form {
+    margin-right: 24px;
+    margin-left: 80px;
+}
+
+.footer-subscribe-text {
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+    color: #FFF;
+}
+
 /* ============== FOOTER STYLES ============== */
 
 /* ============== BACKDROP STYLES ============== */
