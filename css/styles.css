@@ -640,6 +640,12 @@ svg {
     background-color: #4D5AE5;
 }
 
+.footer-button-icon {
+    width: 24px;
+    height: 24px;
+    margin-left: 16px;
+}
+
 /* ============== FOOTER STYLES ============== */
 
 /* ============== BACKDROP STYLES ============== */
