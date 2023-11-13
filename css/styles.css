@@ -682,7 +682,6 @@ svg {
     transform: translate(-50%, -50%);
     width: 408px;
     min-height: 584px;
-    margin-bottom: 8px;
     border-radius: 4px;
     background-color: #FCFCFC;
     padding-top: 72px;
@@ -742,7 +741,7 @@ border: none;
 /* ============== REVIEW FORM STYLES ============== */
 
 .review-form-field-wrapper {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .review-form-field-label {
@@ -833,12 +832,16 @@ border: none;
     border-radius: 2px;
     fill: transparent;
     margin-right: 8px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .review-form-own-checkbox-icon {
     width: 16px;
     height: 16px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .review-form-checkbox-label {
