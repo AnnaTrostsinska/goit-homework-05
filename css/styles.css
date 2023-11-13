@@ -744,6 +744,10 @@ border: none;
     margin-bottom: 8px;
 }
 
+.review-form-field-wrapper-comment {
+    margin-bottom: 16px;
+}
+
 .review-form-field-label {
     display: block;
     line-height: 1.17;
