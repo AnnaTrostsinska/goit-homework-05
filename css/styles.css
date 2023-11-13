@@ -682,6 +682,7 @@ svg {
     transform: translate(-50%, -50%);
     width: 408px;
     min-height: 584px;
+    margin-bottom: 8px;
     border-radius: 4px;
     background-color: #FCFCFC;
     padding-top: 72px;
